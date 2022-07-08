@@ -166,22 +166,108 @@ switch (true) {
 // }
 
 // Exercises: Level 2
-let x = prompt('Enter your grade ')
-if (x >= 80  <= 100){
-    console.log('A')
-} 
-else if(70 >= x <= 89) {
-    console.log('B')
-}
-else if(x >= 60 <= 69){
-    console.log('C')
-} 
-else if (x >= 50 <= 59) {
-    console.log('D')
-}
-else if (x >= 0 <= 49) {
-    console.log('F')
-}
-else {
-    console.log()
-}
+// let x = prompt('Enter your grade ')
+// if (x >= 80 && x <= 100){
+//     console.log('A')
+// } 
+// else if(x >= 70 && x <= 89)  {
+//     console.log('B')
+// }
+// else if(x >= 60 && x <= 69){
+//     console.log('C')
+// } 
+// else if (x >= 50 && x <= 59) {
+//     console.log('D')
+// }
+// else if (x >= 0 && x <= 49) {
+//     console.log('F')
+// }
+// else {
+//     console.log('error')
+// }
+
+
+// Number 2
+// let monthUserInput = prompt('Enter any month of your choice ?')
+// let month = monthUserInput.toLocaleLowerCase()
+
+// switch (true) {
+//     case month === 'september' || month === 'october' || month === 'november':
+//         console.log('The season is Autumn')
+//         break
+//     case month ==='december' || month ==='january' || month ==='february':
+//         console.log('The season is Spring')
+//         break
+//     case month ==='june' || month ==='july' || month ==='august':
+//         console.log('The season is Summer')
+//         break
+//     default:
+//         console.log('It is not a month.')
+// }
+
+// number 3 Check if a day is weekend day or a working day. Your script will take day as an input.
+
+// let day = prompt('What is the day today')
+// let days = day.toLocaleLowerCase()
+// let days = day
+// if (day === Saturday) {
+//     console.log('Saturday is a weekened')
+// }
+// else if(day === saturDay) {
+//     console.log('Saturday is a weekened')
+// }
+// else if (day === Friday) {
+//     console.log('Friday is a working day.')
+// }
+// else if (day === FrIDAy) {
+//     console.log('Friday is a working day.')
+// }
+// else (
+//     console.log()
+// )
+
+
+// let day = prompt('What is the day today ?')
+// // let day = dayUserInput.toLocaleLowerCase()
+// switch (true) {
+//         case day === 'Saturday':
+//             console.log(`Saturday is a weekend`)
+//             break
+//         case day === 'saturDaY':
+//             console.log('Saturday is a weekend')
+//             break
+//         case day === 'Friday':
+//             console.log('Friday is a working day')
+//             break
+//         case day === 'FrIDAy':
+//             console.log('Friday is a working day')
+//             break
+//         default:
+//             console.log('It is not a day.')
+//     }
+
+
+// let daysInMonth = prompt('Enter a month')
+// // let day = dayUserInput.toLocaleLowerCase()
+// switch (true) {
+//         case daysInMonth === 'January':
+//             console.log(`January has 31 days.`)
+//             break
+//         case daysInMonth === 'JANUARY':
+//             console.log('January has 31 days.')
+//             break
+//         case daysInMonth === 'February':
+//             console.log('February has 28 days.')
+//             break
+//         case daysInMonth === 'FEbruary':
+//             console.log('February has 28 days.')
+//             break
+//         default:
+//             console.log('It is not a month.')
+//     }
+
+var dt = new Date();
+ var month = dt.getMonth();
+ var year = dt.getFullYear();
+daysInMonth = new Date(year, month, 0).getDate();
+console.log(dt)
