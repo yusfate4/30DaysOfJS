@@ -416,6 +416,7 @@ console.log(numbers.lastIndexOf(6));
 // console.log(fullStack[1]);
 
 // Exercise: Level 1
+/*
 const countries = [
   "Albania",
   "Bolivia",
@@ -475,19 +476,19 @@ console.log(companies[3].toUpperCase());
 console.log(companies[4].toUpperCase());
 console.log(companies[5].toUpperCase());
 console.log(companies[6].toUpperCase());
-
+*/
 // Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
-const newCompanies = companies.toString();
-console.log(`${newCompanies} are big IT companies.`);
+// const newCompanies = companies.toString();
+// console.log(`${newCompanies} are big IT companies.`);
 
-// 13.
+// // 13.
 
-const newCompanies1 = companies.indexOf('Apple')
-if (newCompanies1 == 3) {
-    console.log(`The company exist`)
-} else {
-    console.log(`The company does not exist`)
-}
+// const newCompanies1 = companies.indexOf('Apple')
+// if (newCompanies1 == 3) {
+//     console.log(`The company exist`)
+// } else {
+//     console.log(`The company does not exist`)
+// }
 
 // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
@@ -516,5 +517,116 @@ if (newCompanies1 == 3) {
 // console.log(companies)
 
 // 21. Remove the middle IT company or companies from the array
-let helloWorld = companies[3];
-console.log(helloWorld)
+// let helloWorld = companies[3];
+// console.log(helloWorld)
+
+
+// 22. Remove the last IT company from the array
+/*
+const companies = [
+    'Facebook',
+    'Goodle',
+    'Microsoft',
+    'Apple',
+    'IBM',
+    'Oracle',
+    'Amazon'
+]
+// companies.pop()
+
+console.log(companies)
+*/
+// Exercise: Level 2
+
+// 2: First remove all the punctuations and change the string to array and count the number of words in the array
+/*
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+words = text.split(' ')
+console.log(words)
+console.log(words.length)
+
+// 3: In the following shopping cart add, remove, edit items
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+// shoppingCart.unshift('Meat')
+// console.log(shoppingCart)
+// shoppingCart.push('Sugar')
+// console.log(shoppingCart)
+// shoppingCart.pop()
+
+shoppingCart[2] = 'Green Tea'
+console.log(shoppingCart)
+*/
+
+//4:  In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+
+// const countries = [
+//     "Albania",
+//     "Bolivia",
+//     "Canada",
+//     "Denmark",
+//     "Ethiopia",
+//     "Finland",
+//     "Germany",
+//     "Hungary",
+//     "Ireland",
+//     "Japan",
+//     "Kenya",
+//   ];
+//   let index = countries.indexOf('Ethiopia')
+
+// if (index === 4) {
+//     console.log("ETHIOPIA")
+// } else {
+//     console.log("add to the countries list.")
+// }
+
+// 6: Concatenate the following two variables and store it in a fullStack variable.
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'React'];
+const backEnd = ['Node', 'Express', 'MongoDB'];
+
+const fullStack = frontEnd + backEnd;
+// console.log(fullStack)
+
+// Exercise: Level 3 >> The following is an array of 10 students ages:
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+// Sort the array and find the min and max age
+ages.sort();
+console.log(ages)
+
+// Find the median age(one middle item or two middle items divided by two)
+let medianAge = (ages[4] + ages[5]) / 2;
+console.log(medianAge)
+
+// Find the average age(all items divided by number of items)
+let average = ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + ages[6] + ages[7] + ages[8] + ages[9];
+let averages = average / ages.length;
+console.log(averages);
+
+// Find the range of the ages(max minus min)
+let minimum = Math.min(...ages);
+console.log(minimum)
+
+let maximum = Math.max(...ages);
+console.log(maximum)
+
+let ranges = maximum - minimum;
+console.log(ranges)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
