@@ -231,7 +231,6 @@ console.log(numbers.length);
 // console.log(numbers.indexOf(1));
 // console.log(numbers.indexOf(6));
 
-
 // let us check if a banana exist in the array
 /*
 const fruits = ['banana', 'orange', 'mango', 'lemon'];
@@ -332,7 +331,7 @@ console.log(numbers.lastIndexOf(6));
 // console.log(numbers.slice(1,3));
 
 // // splice method in array
-// const numbers = [1, 2, 3, 4, 5] 
+// const numbers = [1, 2, 3, 4, 5]
 // numbers.splice();
 // console.log(numbers)
 
@@ -377,7 +376,6 @@ console.log(numbers.lastIndexOf(6));
 // numbers.unshift(0)
 // console.log(numbers)
 
-
 // const numbers = [1, 2, 3, 4, 5]
 // numbers.reverse()
 // console.log(numbers)
@@ -402,17 +400,121 @@ console.log(numbers.lastIndexOf(6));
 // webTechs.reverse()
 // console.log(webTechs)
 
-const firstNums = [1, 2, 3]
-const secondsNums = [1, 4, 9]
+// const firstNums = [1, 2, 3]
+// const secondsNums = [1, 4, 9]
 
-const arrayOfArray = [[1, 2, 3], [1, 2, 3]]
-console.log(arrayOfArray[0])
+// const arrayOfArray = [[1, 2, 3], [1, 2, 3]]
+// console.log(arrayOfArray[0])
 
-const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
-const backEnd = ['Node', 'Express', 'MangoDB']
-const fullStack = [frontEnd, backEnd]
+// const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+// const backEnd = ['Node', 'Express', 'MangoDB']
+// const fullStack = [frontEnd, backEnd]
 
-console.log(fullStack);
-console.log(fullStack.length);
-console.log(fullStack[0]);
-console.log(fullStack[1]);
+// console.log(fullStack);
+// console.log(fullStack.length);
+// console.log(fullStack[0]);
+// console.log(fullStack[1]);
+
+// Exercise: Level 1
+const countries = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+// Declare an empty array;
+const arr = [];
+console.log(arr);
+
+// Declare an array with more than 5 number of elements
+let arr1 = [1, 2, 3, 4, 5];
+console.log(arr1.length);
+console.log(arr1[0]);
+console.log(arr1[2]);
+console.log(arr1[4]);
+
+let mixedDataTypes = ['1', 'Dahud', 'Yusuf', true, 23, null]
+console.log(mixedDataTypes.length)
+
+// Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+const companies = [
+    'Facebook',
+    'Goodle',
+    'Microsoft',
+    'Apple',
+    'IBM',
+    'Oracle',
+    'Amazon'
+]
+console.log(companies);
+console.log(companies.length);
+console.log(companies[0]);
+console.log(companies[3]);
+console.log(companies[6]);
+console.log(companies[1].toUpperCase());
+console.log(companies[2].toUpperCase());
+console.log(companies[3].toUpperCase());
+console.log(companies[4].toUpperCase());
+console.log(companies[5].toUpperCase());
+console.log(companies[6].toUpperCase());
+
+// Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+const newCompanies = companies.toString();
+console.log(`${newCompanies} are big IT companies.`);
+
+// 13.
+
+const newCompanies1 = companies.indexOf('Apple')
+if (newCompanies1 == 3) {
+    console.log(`The company exist`)
+} else {
+    console.log(`The company does not exist`)
+}
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const result = words.filter(word => word.length < 6);
+
+// console.log(result);
+
+// 15. Sort the array using sort() method
+// console.log(companies.sort());
+
+// 16. Reverse the array using reverse() method
+// console.log(companies.reverse());
+
+// 17. Slice out the first 3 companies from the array
+// console.log(companies);
+// console.log(companies.slice(2, 6));
+
+//18. Slice out the last 3 companies from the array
+// console.log(companies.slice(0, 4));
+
+// 19. Slice out the middle IT company or companies from the array
+// console.log(companies.slice(3, 4));
+
+// 20. Remove the first IT company from the array
+// companies.shift()
+// console.log(companies)
+
+// 21. Remove the middle IT company or companies from the array
+let helloWorld = companies[3];
+console.log(helloWorld)
