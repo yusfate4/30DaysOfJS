@@ -60,7 +60,7 @@ console.log(sum)
 // } while (i <= 5)
 
 // for of loop
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 // for (const num of numbers) {
 //     console.log(num)
 // }
@@ -93,7 +93,6 @@ const numbers = [1, 2, 3, 4, 5]
 //     console.log(tech[0])
 // }
 
-
 // const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
 // const newArr = []
 // for (const country of countries) {
@@ -121,30 +120,30 @@ const numbers = [1, 2, 3, 4, 5]
 
 // Exercises: Level 1
 const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-  ]
-  
-  const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-  ]
-  
-  const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+
+const webTechs = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+
+const mernStack = ["MongoDB", "Express", "React", "Node"];
 // 1: Iterate 0 to 10 using for loop, do the same using while and do while loop
 // for (i = 0; i<= 10; i++) {
 //     console.log(i)
@@ -195,7 +194,7 @@ const countries = [
 // let arr = '';
 // for (let i = 0; i <= num; i++) {
 //     arr += '#'
-    
+
 //     console.log(arr)
 // }
 
@@ -238,11 +237,11 @@ const countries = [
 
 // for (let i = -1; i <= 10; i++) {
 //     if (i === -1) {
-// console.log(`i    i^2    i^3`)      
-//     } 
+// console.log(`i    i^2    i^3`)
+//     }
 //     else   {
 //          console.log(`${i}    ${i ** 2}     ${i ** 3}`)
-//     }       
+//     }
 // }
 
 // 7. Use for loop to iterate from 0 to 100 and print only even numbers
@@ -261,13 +260,140 @@ const countries = [
 //     }
 // }
 
-// Use for loop to iterate from 0 to 100 and print only prime numbers
+//9: Use for loop to iterate from 0 to 100 and print only prime numbers
 
-for (i = 2; i <= 100; i++) {
-    if (100 % i === 0) {
-        console.log(i)
-    }
+// var total = 0;
+// for (var num = 1; num < 11; num++){
+//     total = total + num;
+// }
+
+// console.log("The total is: " + total)
+
+// var fruits = ['mango', 'banana', 'apple']
+
+// for (var i = 0; i<fruits.length; i++) {
+//     console.log(fruits[i])
+// }
+
+// for (var num = 0; num <= 100; num++) {
+//     var notPrime = false;
+//     for (var i = 2; i < num; i++){
+//         if (num % i === 0 && i !== num) {
+//             notPrime = true;
+//         }
+//     }
+//     if (notPrime === false) {
+//         console.log(num)
+//     }
+// }
+
+//10: Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+// var sum = 0;
+// for (i = 0; i <= 100; i++){
+//     sum = sum + i;
+
+// }
+// console.log(`The sum of all numbers from 0 to 100 is ${sum}.`)
+
+// 11: Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+// var sum = 0;
+// var sum1 = 0;
+// for (i = 0; i <= 100; i++) {
+//   if (i % 2 == 0) {
+//     sum += i;
+//   } else if (i % 2) {
+//     sum1 += i;
+//   }
+// }
+// console.log(
+//   `The sum of all evens from 0 to 100 is ${sum}. And the sum of all odds from 0 to 100 is ${sum1}.`
+// );
+
+// 12: Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+/*
+var sum = 0;
+var sum1 = 0;
+let arr = [];
+for (i = 0; i <= 100; i++) {
+  if (i % 2 == 0) {
+    sum += i;
+  } else if (i % 2) {
+    sum1 += i;
+  }
 }
+arr.push(sum);
+arr.push(sum1);
+console.log(arr);
+*/
+
+// 13: Develop a small script which generate array of 5 random numbers
+// let arr = []
+// for (num = 0; num <= 6; num++){
+//   if ( num = Math.floor(Math.random() * 10) + 1)
+//   num++
+// }
+
+// arr.push(num)
+// console.log(`${arr}, ${arr}, ${arr}`)
+
+var arr = [];
+while(arr.length < 5){
+    var r = Math.floor(Math.random() * 100) + 1;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+console.log(arr);
+
+// 14: Develop a small script which generate array of 5 random numbers and the numbers must be unique
+
+
+
+
+
+
+// for loop that goes from top to bottom
+// var total = 0;
+// for (var num = 100; num >= 0; num--) {
+//   total += num;
+// }
+
+// console.log(total)
+
+
+// while loop
+// var num = 0;
+
+// while (num <= 10) {
+//   console.log(num)
+//   num++
+// }
+
+// var sum = 0;
+// var num = 0;
+
+// while (num < 10){
+//   sum += num;
+//   num++
+// }
+ 
+
+// var randomStuff = ['apple', 3.2414, 999, true, false, undefined, ['apple', 'ball', 'cat'],3, 2, "lastobject"]
+
+// var x = randomStuff.length - 1;
+
+// while (x < randomStuff.length) {
+//   console.log(randomStuff[x])
+//   x++
+// }
+
+// while (x >= 0) {
+//     console.log(randomStuff[x])
+//     x--
+//   }
+
+
+
+
+
 
 
 
