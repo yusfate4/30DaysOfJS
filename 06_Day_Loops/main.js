@@ -309,7 +309,6 @@ console.log(arr);
 
 // console.log(total)
 
-
 // while loop
 // var num = 0;
 
@@ -325,7 +324,6 @@ console.log(arr);
 //   sum += num;
 //   num++
 // }
- 
 
 // var randomStuff = ['apple', 3.2414, 999, true, false, undefined, ['apple', 'ball', 'cat'],3, 2, "lastobject"]
 
@@ -374,8 +372,6 @@ console.log(arr);
 // }
 // console.log(generator(8))
 
-
-
 // const number = [1, 2, 3, 4, 5]
 // const newArr = []
 // let sum = 0
@@ -385,13 +381,11 @@ console.log(arr);
 
 // console.log(newArr)
 
-
 // let i = 0
 // while (i <= 5) {
 //   console.log(i)
 //   i++
 // }
-
 
 // let i = 0
 // do {
@@ -400,13 +394,13 @@ console.log(arr);
 // } while (i <= 5)
 
 // Develop a small script which generate any number of characters random id:
-  // fe3jo1gl124g
-  // xkqci4utda1lmbelpkm03rba
+// fe3jo1gl124g
+// xkqci4utda1lmbelpkm03rba
 
 // let num1 = Math.floor(Math.random() * 718)
 // console.log(num1)
 
-// let num2 = 
+// let num2 =
 
 /*
 // 1 Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
@@ -471,16 +465,14 @@ const webTechs = [
 
 const mernStack = ["MongoDB", "Express", "React", "Node"];
 
-
 // Exercise: Level 2
-let arr1 = []
+let arr1 = [];
 // No 4: Using the above countries array, create the following new array.
-for (let i = 0; i < countries.length; i++){
-  arr1.push(countries[i])
-}  
+for (let i = 0; i < countries.length; i++) {
+  arr1.push(countries[i]);
+}
 
 // console.log(arr1)
- 
 
 // 5: Using the above countries array, create an array for countries length'
 // console.log(countries[0].length)
@@ -510,29 +502,29 @@ console.log(`['${newArr}'],`)
 */
 // 7: In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 
-
-
 // let index = countries.indexOf('land')  // 0
 // console.log(countries.find('land'))
 // if(index === -1){
-//    console.log('This fruit does not exist in the array')  
+//    console.log('This fruit does not exist in the array')
 // } else {
 //     console.log('This fruit does exist in the array')
 // }
 
-const myString = "hello world!"
-if(myString.includes("hello")){
-  // do something 
-  console.log("hello")
-}else{
+const myString = "hello world!";
+if (myString.includes("hello")) {
+  // do something
+  console.log("hello");
+} else {
   //also do something
 }
 
-if(countries.includes("land")) {
-  console.log(countries.includes("land"))
-} else {
-  console.log(countries)
+for (i = 0; i < countries.length; i++) {
+  if (countries[i].includes("land")) {
+    console.log(countries.includes("land"));
+  } else {
+    console.log("helloooo");
+  }
+  console.log(countries[i].includes("land"));
 }
 
-console.log(countries.includes('land'))
-
+// console.log(countries.includes('land'))

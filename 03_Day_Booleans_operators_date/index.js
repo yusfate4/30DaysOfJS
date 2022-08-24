@@ -317,12 +317,98 @@
 // Create a human readable time format using the Date time object. The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
 // YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 
-let now = new Date();
-let year = now.getFullYear();
-let month = now.getMonth();
-let day = now.getDay();
-let hour = now.getHours();
-let min = now.getMinutes();
+// let now = new Date();
+// let year = now.getFullYear();
+// let month = now.getMonth();
+// let day = now.getDay();
+// let hour = now.getHours();
+// let min = now.getMinutes();
 
-console.log(`${year}-0${month}-0${day} 0${hour}:${min}AM`);
+// console.log(`${year}-0${month}-0${day} 0${hour}:${min}AM`);
+
+
+
+// Revision
+// 1: Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
+let firstName = 'Yusuf'
+let lastName = 'Dahud'
+let country = 'Nigeria'
+let city = 'Lagos'
+let age = ' 23'
+let isMarried = true
+let year = 2022
+
+// console.log(typeof(firstName))
+// console.log(typeof(lastName))
+// console.log(typeof(country))
+// console.log(typeof(city))
+// console.log(typeof(age))
+// console.log(typeof(isMarried))
+// console.log(typeof(year))
+
+// 2: Check if type of '10' is equal to 10
+console.log(typeof('10'))
+console.log(typeof(10))
+
+// 3: Check if parseInt('9.8') is equal to 10
+console.log(4 != '4')
+
+// Level
+// Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+// let base = prompt("Enter the base")
+// let height = prompt("Enter the height")
+
+// let area = 0.5 * base * height
+
+// alert(`The area of the triangle is ${area} m2`)
+
+
+// 2: Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+// let sideA = parseFloat(prompt('ENter side A'))
+// let sideB = parseFloat(prompt("ENter side b"))
+// let sideC = parseFloat(prompt("ENter side c"))
+
+// let perimeter = sideA + sideB + sideC
+
+// alert(`The perimeter of the triangle is ${perimeter}`)
+
+// 6: Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+// let y1 = 2
+// let x1 = 2
+// let y2 = 10
+// let x2 = 6
+
+// let m2 = (y2 - y1) / (x2 - x1)
+// console.log(m2)
+
+// 8: Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+// let x = parseInt(prompt("Enter any number for x"))
+// let y = (x**2) + (6 * x) + 9
+// alert(`The value of y is: ${y}`)
+
+// 9: If the length of your name is greater than 7 say, your name is long else say your name is short.
+// let name = prompt("Enter your name")
+// let nameLength = name.length
+// if (nameLength > 7){
+//     console.log(`${name} is long`)
+// } else {
+//     console.log(`${name} is short`)
+// }
+
+let myAge = 250
+let yourAge = 25
+console.log(`I am ${myAge - yourAge} older than you `)
+
+// 13: Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+let birth = parseInt(prompt("Enter your birth year"))
+const now = new Date().getFullYear()
+let letAge = now - birth
+if (letAge >= 18){
+    alert(`You are ${letAge}. You are old enough to drive`)
+} else {
+    alert(`You are ${letAge}. You will be allowed to drive after ${18 - letAge} years.`)
+}
+
+// 14; Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+let years = parseInt(prompt("Enter number of years you live: "))
 
