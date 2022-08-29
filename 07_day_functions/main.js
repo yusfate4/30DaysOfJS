@@ -2,20 +2,19 @@
 function square() {
   let num = 2;
   let sq = num * num;
-  console.log(sq);
+  //   console.log(sq);
 }
 square();
 
+function addTwoNumbers() {
+  let numOne = 10;
+  let numTwo = 20;
+  let sum = numOne + numTwo;
 
-function addTwoNumbers(){
-    let numOne = 10
-    let numTwo = 20
-    let sum = numOne + numTwo
-
-    console.log(sum)
+  //   console.log(sum);
 }
 
-addTwoNumbers()
+addTwoNumbers();
 
 // function printFullName() {
 //     let firstName = 'Yusuf'
@@ -30,46 +29,197 @@ addTwoNumbers()
 
 // Function returning value
 function printFullName() {
-    let firstName = 'Yusuf'
-    let lastNAme = 'Dahud'
-    let space = ' '
-    let fullName = firstName + space + lastNAme
+  let firstName = "Yusuf";
+  let lastNAme = "Dahud";
+  let space = " ";
+  let fullName = firstName + space + lastNAme;
 
-    return fullName
+  return fullName;
 }
 
-console.log(printFullName())
+// console.log(printFullName());
 
+function addTwoNumbers() {
+  let numOne = 10;
+  let numTwo = 20;
+  let sum = numOne + numTwo;
 
-function addTwoNumbers(){
-    let numOne = 10
-    let numTwo = 20
-    let sum = numOne + numTwo
-
-    return sum
+  return sum;
 }
 
-console.log(addTwoNumbers())
-
+// console.log(addTwoNumbers());
 
 // Function with a parameter
 function areaOfCircle(r) {
-    let area = Math.PI * r * r
-    return area
+  let area = Math.PI * r * r;
+  return area;
 }
 
-console.log(areaOfCircle(10))
+// console.log(areaOfCircle(10));
 
-function square(number){
-    return number * number
+function square(number) {
+  return number * number;
 }
 
-console.log(square(10))
+// console.log(square(10));
 
 // Function with two parameters
 function sumTwoNumbers(numOne, numTwo) {
-    let sum = numOne + numTwo
-    return sum
+  let sum = numOne + numTwo;
+  return sum;
 }
 
-console.log(sumTwoNumbers(10, 20))
+// console.log(sumTwoNumbers(10, 20));
+
+function printFullNames(firstName, lastNAme) {
+  return `${firstName} ${lastNAme}`;
+}
+
+// console.log(printFullNames("Dahud", "Yusuf"));
+
+// Function with many parameters
+function sumArrayValues(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
+
+const numbers = [1, 2, 3, 4, 5, 9, 0];
+console.log(sumArrayValues(numbers));
+
+const areaOfCircle1 = (radius) => {
+  let area = Math.PI * radius * radius;
+  return area;
+};
+
+console.log(areaOfCircle1(10));
+
+// Function with unlimited number of parameters
+function sumAllNums() {
+  console.log(arguments);
+}
+
+sumAllNums(1, 2, 3, 4, 5);
+
+// function declaration
+function sumALlNum() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+
+console.log(sumALlNum(1, 2, 3, 4));
+console.log(sumALlNum(10, 20, 30, 40));
+console.log(sumALlNum(15, 20, 35, 45));
+
+// Unlimited number of parameters in arrow function
+const sumAllNums1 = (...args) => {
+  let sum = 0;
+  for (const element of args) {
+    sum += element;
+  }
+  return sum;
+};
+
+console.log(sumAllNums1(1, 2, 3, 4));
+console.log(sumAllNums1(10, 20, 30, 40, 50));
+console.log(sumAllNums1(15, 20, 30, 25, 10, 33, 40));
+
+// Anonymous Function
+const anonymousFun = function () {
+  console.log(
+    "I am an anonymous function and my value is stored in anonymousFun"
+  );
+};
+
+// Expression Function
+const square1 = function (n) {
+  return n * n;
+};
+
+console.log(square1(3));
+
+// Self Invoking Functions
+(function (n) {
+  console.log(n * n);
+})(5);
+
+let squaredNum = (function (n) {
+  return n * n;
+})(10);
+
+console.log(squaredNum);
+
+// Arrow Function
+const square2 = (n) => {
+  return n * n;
+};
+console.log(square2(2));
+
+const square3 = (n) => n * n;
+console.log(square3(4));
+
+const changeToUpperCase = (arr) => {
+  const newArr = [];
+  for (const element of arr) {
+    newArr.push(element.toUpperCase());
+  }
+  return newArr;
+};
+
+const countries = ["Finland", "Sweden", "Norway", "Denmark", "Iceland"];
+console.log(changeToUpperCase(countries));
+
+const printFullName1 = (firstName, lastName) => {
+  return `${firstName} ${lastName}`;
+};
+
+console.log(printFullName1("Yusuf", "Dahud"));
+
+const printFullName2 = (firstName, lastName) => `${firstName} ${lastName}`;
+console.log(printFullName1("Yusuf", "Dahud"));
+
+function greetings(name = "Yusuf") {
+  let message = `${name}, welcome to 30 days of javascript`;
+  return message;
+}
+
+console.log(greetings());
+console.log(greetings("Dahud"));
+
+
+function generateFullName (firstName = 'Dahud', lastName = 'Yusuf') {
+    let message = `${firstName} ${lastName}, welcome to 30 days of javascript`
+    return message
+}
+
+console.log(generateFullName())
+console.log(generateFullName('Ishola', 'Tunji'))
+
+
+const calculateAge = (birthYear, currentYear = 2022) => {
+    let age = currentYear - birthYear
+    return age
+}
+
+console.log('Age: ', calculateAge(1958))
+
+// calculate the bmi
+function calculateBmi (weight, height) {
+    let bmi = weight / (height ** 2)
+    return bmi
+}
+
+console.log('Bmi: ', calculateBmi(100, 2))
+
+// weight of object
+const weightOfObject = (mass, gravity = 9.81) => mass * gravity + 'N'
+    
+
+
+console.log('Weight of an object in Newton: ', weightOfObject(100))
+console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62))
