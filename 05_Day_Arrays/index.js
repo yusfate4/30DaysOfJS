@@ -520,7 +520,6 @@ console.log(companies[6].toUpperCase());
 // let helloWorld = companies[3];
 // console.log(helloWorld)
 
-
 // 22. Remove the last IT company from the array
 /*
 const companies = [
@@ -581,52 +580,78 @@ console.log(shoppingCart)
 // }
 
 // 6: Concatenate the following two variables and store it in a fullStack variable.
-const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'React'];
-const backEnd = ['Node', 'Express', 'MongoDB'];
+const frontEnd = ["HTML", "CSS", "JS", "React", "React"];
+const backEnd = ["Node", "Express", "MongoDB"];
 
 const fullStack = frontEnd + backEnd;
 // console.log(fullStack)
 
 // Exercise: Level 3 >> The following is an array of 10 students ages:
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 // Sort the array and find the min and max age
 ages.sort();
-console.log(ages)
+console.log(ages);
 
 // Find the median age(one middle item or two middle items divided by two)
 let medianAge = (ages[4] + ages[5]) / 2;
-console.log(medianAge)
+console.log(medianAge);
 
 // Find the average age(all items divided by number of items)
-let average = ages[0] + ages[1] + ages[2] + ages[3] + ages[4] + ages[5] + ages[6] + ages[7] + ages[8] + ages[9];
+let average =
+  ages[0] +
+  ages[1] +
+  ages[2] +
+  ages[3] +
+  ages[4] +
+  ages[5] +
+  ages[6] +
+  ages[7] +
+  ages[8] +
+  ages[9];
 let averages = average / ages.length;
 console.log(averages);
 
 // Find the range of the ages(max minus min)
 let minimum = Math.min(...ages);
-console.log(minimum)
+console.log(minimum);
 
 let maximum = Math.max(...ages);
-console.log(maximum)
+console.log(maximum);
 
 let ranges = maximum - minimum;
-console.log(ranges)
+console.log(ranges);
 
+// revision
+let myArray = ["Yusuf", "Grace", 7, true, "hello", NaN];
 
+console.log(myArray);
+console.log(myArray.length);
+console.log(myArray[0]);
+console.log(myArray[2]);
+console.log(myArray[4]);
 
+let companies = [
+  "Facebook",
+  "Google",
+  "Microsoft",
+  "Apple",
+  "IBM",
+  "Oracle",
+  "Amazon",
+];
 
+console.log(companies);
+console.log(companies.length);
+console.log(companies[0]);
+console.log(companies[3]);
+console.log(companies[6]);
+// console.log(companies[0]);
+// console.log(companies[1]);
+// console.log(companies[2]);
+// console.log(companies[0]);
 
+for (i = 0; i < companies.length; i++) {
+  console.log(companies[i].toUpperCase());
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(`${companies} are big IT companies`)

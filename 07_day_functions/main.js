@@ -1,4 +1,5 @@
 // Functions without parameter
+/*
 function square() {
   let num = 2;
   let sq = num * num;
@@ -201,10 +202,7 @@ console.log(generateFullName())
 console.log(generateFullName('Ishola', 'Tunji'))
 
 
-const calculateAge = (birthYear, currentYear = 2022) => {
-    let age = currentYear - birthYear
-    return age
-}
+const calculateAge = (birthYear, currentYear = 2022) =>  currentYear - birthYear
 
 console.log('Age: ', calculateAge(1958))
 
@@ -223,3 +221,139 @@ const weightOfObject = (mass, gravity = 9.81) => mass * gravity + 'N'
 
 console.log('Weight of an object in Newton: ', weightOfObject(100))
 console.log('Weight of an object in Newton: ', weightOfObject(100, 1.62))
+
+*/
+
+// Exercise
+// Exercises: Level 1
+// 1.
+function fullNames() {
+  console.log("Yusuf");
+}
+fullNames();
+
+// 2.
+const fullName = (firstName, secondName) => firstName + " " + secondName;
+// console.log(fullName('Dahud', 'Yusuf'))
+
+function fullNames(firstName, secondName) {
+  let names = firstName + " " + secondName;
+  return names;
+}
+
+// console.log(fullNames('Agbaje', 'Abiola'))
+
+// 3.
+function addNumbers(firstNum, secondNum) {
+  sum = firstNum + secondNum;
+  return sum;
+}
+console.log(addNumbers(5, 9));
+
+//4.
+function areaOfRectangle(length, width) {
+  area = length * width;
+  return area;
+}
+console.log(areaOfRectangle(4, 5));
+
+// 5.
+function perimeterOfRectangle(length, width) {
+  perimeter = 2 * (length + width);
+  return perimeter;
+}
+console.log(perimeterOfRectangle(2, 9));
+
+// 6.
+function volumeOfRectPrism(length, width, height) {
+  volume = length * width * height;
+  return volume;
+}
+console.log(volumeOfRectPrism(2, 3, 9));
+
+// 7.
+function areaOfCircle(pie, radius, radius) {
+  area = pie * radius * radius;
+  return area;
+}
+console.log(areaOfCircle(3.142, 5, 5));
+
+// 8.
+function circumOfCircle(pie, radius) {
+  circumference = 2 * pie * radius;
+  return circumference;
+}
+console.log(circumOfCircle(3.142, 5));
+
+// 9.
+function density(mass, volume) {
+  den = mass / volume;
+  return den;
+}
+
+console.log(density(50, 5));
+
+// 10.
+function speed(distance, time) {
+  speedOfObject = distance / time;
+  return speedOfObject;
+}
+
+console.log(speed(200, 10));
+
+// 11.
+const weight = (mass, gravity) => mass * gravity;
+console.log(weight(30, 10));
+
+// 12.
+function convertCelsiusToFahrenheit(celsius) {
+  fahrenheit = (celsius * 9) / 5 + 32;
+  return fahrenheit;
+}
+// console.log(convertCelsiusToFahrenheit(10));
+
+// 13.
+function BMI(weight, height) {
+  bmi = weight / (height * height);
+  return bmi;
+}
+// console.log(BMI(70, 2.5));
+
+// 14.
+function checkSeason(month) {
+  return (season = "Winter"), "Spring", "Summer";
+}
+
+// console.log(checkSeason("Winter", "Spring", "Summer", "Autumn"));
+
+// 15.
+function findMax() {}
+
+// JavaScript.info
+// Local variable
+function showMessage() {
+  let message = "Hello, I'm JavaScript";
+
+  alert(message);
+}
+
+// showMessage();
+// alert(message);
+
+// Outer variables
+let userName = "Yusuf";
+
+function showMessage() {
+  let message = "Hello, " + userName;
+  console.log(message);
+}
+
+showMessage();
+
+function showMessages(from, text) {
+  from = '*' + from + '*'
+  console.log(from + ': ' + text)
+}
+let from = 'Yusuf'
+showMessages(from, 'hello')
+console.log(from)
